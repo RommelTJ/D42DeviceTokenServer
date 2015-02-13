@@ -10,7 +10,7 @@
 
 #define DEVICE_SERVICE_TYPE @"_http._tcp"
 #define DEVICE_SERVICE_NAME @"com.rommelrico.DeviceToken"
-#define DEVICE_SERVICE_PORT 50123
+#define DEVICE_SERVICE_PORT 50388
 
 @interface ViewController () <NSNetServiceDelegate>
 
