@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WebService.h"
 
 #define DEVICE_SERVICE_TYPE @"_http._tcp"
 #define DEVICE_SERVICE_NAME @"com.rommelrico.DeviceToken"
@@ -16,6 +17,7 @@
 
 @property (weak) IBOutlet NSTextField *myServerStatusLabel;
 @property NSNetService *myService;
+@property WebService *myWebService;
 
 @end
 
@@ -25,6 +27,10 @@
     //NSButton *button = sender;
     static BOOL advertising = YES;
     if (advertising) {
+        //Start the Web Service
+        self.myWebService = [WebService webServiceWithDelegate:self];
+        [self.myWebService startServer];
+        
         //Start Advertising
         self.myService = [[NSNetService alloc] initWithDomain:@"" type:DEVICE_SERVICE_TYPE name:DEVICE_SERVICE_NAME port:DEVICE_SERVICE_PORT];
         self.myService.delegate = self;

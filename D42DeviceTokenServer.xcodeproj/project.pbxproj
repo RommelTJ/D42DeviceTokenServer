@@ -13,6 +13,7 @@
 		7785C6751A8DB1CD0035CDBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7785C6741A8DB1CD0035CDBB /* Images.xcassets */; };
 		7785C6781A8DB1CD0035CDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7785C6761A8DB1CD0035CDBB /* Main.storyboard */; };
 		7785C6841A8DB1CD0035CDBB /* D42DeviceTokenServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7785C6831A8DB1CD0035CDBB /* D42DeviceTokenServerTests.m */; };
+		7785C68F1A8DC2FA0035CDBB /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7785C68E1A8DC2FA0035CDBB /* WebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		7785C67D1A8DB1CD0035CDBB /* D42DeviceTokenServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = D42DeviceTokenServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7785C6821A8DB1CD0035CDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7785C6831A8DB1CD0035CDBB /* D42DeviceTokenServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D42DeviceTokenServerTests.m; sourceTree = "<group>"; };
+		7785C68D1A8DC2FA0035CDBB /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		7785C68E1A8DC2FA0035CDBB /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		7785C6691A8DB1CD0035CDBB /* D42DeviceTokenServer */ = {
 			isa = PBXGroup;
 			children = (
+				7785C68D1A8DC2FA0035CDBB /* WebService.h */,
+				7785C68E1A8DC2FA0035CDBB /* WebService.m */,
 				7785C66C1A8DB1CD0035CDBB /* AppDelegate.h */,
 				7785C66D1A8DB1CD0035CDBB /* AppDelegate.m */,
 				7785C6711A8DB1CD0035CDBB /* ViewController.h */,
@@ -217,6 +222,7 @@
 			files = (
 				7785C6731A8DB1CD0035CDBB /* ViewController.m in Sources */,
 				7785C6701A8DB1CD0035CDBB /* main.m in Sources */,
+				7785C68F1A8DC2FA0035CDBB /* WebService.m in Sources */,
 				7785C66E1A8DB1CD0035CDBB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
